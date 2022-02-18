@@ -3,6 +3,7 @@ import "../styles/Exchenge.css";
 
 export const Exchenge = () => {
   const [active, setActive] = useState("BUY");
+
   const getInfoCurrency = (val) => {
     fetch(
       `https://api.fastforex.io/fetch-multi?from=${val}&to=EUR,USD,UAH&api_key=8b15bd23a7-7b5cebf241-r7epat`
@@ -91,13 +92,23 @@ export const Exchenge = () => {
     nameCurrencySELL,
   ]);
 
+  const getDate = () => {
+    var date = new Date().toLocaleDateString();
+    date += " ";
+    date += new Date().toLocaleTimeString().slice(0, -3);
+    return date;
+  };
+
   return (
     <div className="exchenger">
-      <label>leftAD</label>
       <form>
         <h1>
           Перевести {nameCurrencyBUY} в {nameCurrencySELL}
         </h1>
+        <label>
+          На {getDate()} 1 {nameCurrencySELL} коштує{" "}
+          {(1 / currency[nameCurrencySELL].value).toFixed(2)} {nameCurrencyBUY}
+        </label>
         <div className="formExchenge">
           <div className="BUY">
             <input
@@ -131,9 +142,9 @@ export const Exchenge = () => {
               <option value={currency.USD.name}>{currency.USD.name}</option>
             </select>
           </div>
+          <div className="ButtonBUY">BUY</div>
         </div>
       </form>
-      <label>rightAD</label>
     </div>
   );
 };

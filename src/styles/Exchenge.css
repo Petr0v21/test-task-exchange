@@ -1,10 +1,16 @@
 input {
   font-size: medium;
+  padding: 3% 2% 3% 5%;
+  border: 1px solid rgb(105, 116, 116);
+  border-radius: 15px;
+  margin-right: 3px;
 }
 
 select {
   background-color: rgb(101, 101, 233);
-  border-radius: 6px;
+  color: white;
+  border-radius: 12px;
+  padding: 2% 4% 2% 4%;
   border: 1px solid rgb(80, 177, 201);
   font-size: large;
   transition: all 0.25s ease;
@@ -14,16 +20,16 @@ select:hover {
   background-color: rgb(138, 138, 255);
 }
 
+h1 {
+  padding-top: 1%;
+}
 .exchenger {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: darkgray;
+  justify-content: center;
   height: 400px;
 }
 
 .exchenger form {
-  background-color: rgb(255, 255, 255);
   width: 50%;
   height: 100%;
   display: flex;
@@ -34,27 +40,36 @@ select:hover {
   padding-right: 2%;
 }
 
-.exchenger label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
+.formExchenge {
+  margin-top: 5%;
 }
 
-.formExchenge {
-  margin-top: 8%;
+.formExchenge div {
+  display: flex;
 }
 
 .SELL {
-  margin-top: 2%;
+  margin-top: 8%;
 }
 
-.BUY input {
-  border-radius: 3px;
-  margin-right: 3px;
+.ButtonBUY {
+  margin-top: 5%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: 500;
+  color: white;
+  width: 40%;
+  padding: 2% 3% 2% 3%;
+  border-radius: 15px;
+  border: 1px solid rgb(3, 3, 3);
+  background-color: rgb(101, 101, 233);
+  transition: all 0.25s ease;
 }
 
-.SELL input {
-  border-radius: 3px;
-  margin-right: 3px;
+.ButtonBUY:hover {
+  color: rgb(190, 242, 255);
+  background-color: rgb(133, 133, 233);
+  border: 1px solid rgb(58, 58, 58);
 }
