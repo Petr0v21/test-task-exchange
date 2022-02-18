@@ -1,0 +1,60 @@
+input {
+  font-size: medium;
+}
+
+select {
+  background-color: rgb(101, 101, 233);
+  border-radius: 6px;
+  border: 1px solid rgb(80, 177, 201);
+  font-size: large;
+  transition: all 0.25s ease;
+}
+
+select:hover {
+  background-color: rgb(138, 138, 255);
+}
+
+.exchenger {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkgray;
+  height: 400px;
+}
+
+.exchenger form {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.exchenger label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.formExchenge {
+  margin-top: 8%;
+}
+
+.SELL {
+  margin-top: 2%;
+}
+
+.BUY input {
+  border-radius: 3px;
+  margin-right: 3px;
+}
+
+.SELL input {
+  border-radius: 3px;
+  margin-right: 3px;
+}

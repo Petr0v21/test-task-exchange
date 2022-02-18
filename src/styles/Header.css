@@ -1,0 +1,14 @@
+.App-header {
+  padding: 1% 5% 1% 5%;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  width: 20%;
+  color: white;
+}
